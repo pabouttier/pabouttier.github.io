@@ -1,4 +1,4 @@
-baseURL = "https://example.com"
+baseURL = "/"
 title   = "Bunch of slides"
 languageCode = "fr-fr"
 theme = "timeline"
