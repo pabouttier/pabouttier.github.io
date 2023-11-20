@@ -66,6 +66,7 @@ section.transition {
 section.cite {
   --background-color    : #49454f;
   --strong-color        : rgb(182, 112, 27);
+  text-align: center; 
 }
 
 section.cite p {
@@ -77,10 +78,10 @@ section.cite strong {
 }
 
 .cite-author { 
-      text-align        : right; 
+      text-align: center; 
    }
 .cite-author:after {   
-      color             : #f87ca1;
+      color             : #ff7700;
       font-size         : 130%;
       font-style        : italic;
       font-weight       : bold;
@@ -88,26 +89,9 @@ section.cite strong {
       padding-right     : 130px;
    }
    .cite-author[data-text]:after {
-      content           : " - "attr(data-text) " - ";      
+      content           : " ~ "attr(data-text) " ~ ";      
    }
    .cite-author p {    
-      padding-bottom : 40px
+      padding-bottom : 40px;
+      text-align: center; 
    }
-
-   .cite-author { 
-    text-align        : right; 
- }
- .cite-author:after {   
-    color             : #f87ca1;
-    font-size         : 130%;
-    font-style        : italic;
-    font-weight       : bold;
-    font-family       : Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding-right     : 130px;
- }
- .cite-author[data-text]:after {
-    content           : " - "attr(data-text) " - ";      
- }
- .cite-author p {    
-    padding-bottom : 40px
- }

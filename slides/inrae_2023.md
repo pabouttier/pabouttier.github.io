@@ -10,10 +10,11 @@ footer: INRAE, sète, 23/11/2023 - pierre-antoine.bouttier@univ-grenoble-alpes.f
 
 ![bg left:33% fit](fig/jupgiter.png)
 # Gérer les expérimentations numériques…
-## *…ou comment rendre la recherche plus reproductible*
+## **…ou comment rendre la recherche plus reproductible**
 
 
-### Journées référents données INRAE - 23/11/2023
+### Journées référents données INRAE
+### 23/11/2023
 #### [Pierre-Antoine Bouttier](mailto:pierre-antoine.bouttier@univ-grenoble-alpes.fr)
 
 ---
