@@ -24,7 +24,7 @@ build-site:
   image: ${CI_TEMPLATE_REGISTRY_HOST}/pages/hugo:latest
   script: 
     - cd src
-    - hugo --future
+    - hugo -F
   artifacts:
     paths:
       - src/public
