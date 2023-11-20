@@ -17,7 +17,7 @@ build-slides:
     - cp -r $MARP_INPUT_PATH/fig/ $MARP_INPUT_PATH/styles/*.css $MARP_OUTPUT_PATH
   artifacts:
     paths:
-      - slides
+      - talks
 
 build-site:
   stage: build
