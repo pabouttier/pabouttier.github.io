@@ -3,17 +3,17 @@ marp: true
 theme: socrates
 author: Pierre-Antoine Bouttier
 paginate: true
-footer: GitLab@CNRS, 29/06/2023 - pierre-antoine.bouttier@univ-grenoble-alpes.fr
+footer: INRAE, sète, 23/11/2023 - pierre-antoine.bouttier@univ-grenoble-alpes.fr
 ---
 
 <!-- _class: titlepage -->
 
-
 ![bg left:33% fit](fig/jupgiter.png)
-# Notebooks Jupyter et GitLab
-## Retour d'expérience
+# Gérer les expérimentations numériques…
+## *…ou comment rendre la recherche plus reproductible*
 
-### GitLab@CNRS - 29/06/2023
+
+### Journées référents données INRAE - 23/11/2023
 #### [Pierre-Antoine Bouttier](mailto:pierre-antoine.bouttier@univ-grenoble-alpes.fr)
 
 ---
@@ -26,185 +26,243 @@ footer: GitLab@CNRS, 29/06/2023 - pierre-antoine.bouttier@univ-grenoble-alpes.fr
   - ...un chercheur en informatique
 
 ---
-# TOC
+## Préambule
 
-<!-- _class: cool-list -->
+* À qui je m'adresse ?
+  - Au plus grand nombre 
+  - Grandes hétérogénéités (de public, de pratiques, d'outils, de niveaux de compétences, de culture numérique, *etc.*)
 
-1. *Les notebooks jupyter, qu'est-ce que c'est ?*
-2. *Quelques considérations pratiques*
-3. *GitLab pour partager vos notebooks*
-
----
-# TOC
-
-<!-- _class: cool-list -->
-
-1. ***Les notebooks jupyter, qu'est-ce que c'est ?***
-2. *Quelques considérations pratiques*
-3. *GitLab pour partager vos notebooks*
-
----
-# Les notebooks Jupyter, en bref
-
-Les notebooks Jupyter peuvent être vus comme :
-  - des cahiers électroniques...
-  - ... accessibles via un **navigateur**...
-  - ... constitués de différentes **cellules**
-
----
-# Les notebooks Jupyter, en bref
-
-Les cellules peuvent contenir :
-  - du texte formatté (markdown)
-  - des images 
-  - des formules mathématiques
-  - du code logiciel exécutable
-
----
-# Les notebooks Jupyter, en bref
-
-Initialement développés pour les langages Julia, Python et R (Jupyter), aujourd'hui, plus de 40 langages sont supportés. 
-- Un notebook peut être exporté sous différents formats (HTML, PDF, LaTeX, etc.)
-- Il est facile d'extraire uniquement les cellules de code d'un notebook
-- Vous pouvez installer `jupyter-notebook` sur votre machine et ainsi, les notebooks s'exécuteront sur votre machine (accès par navigateur)
-
----
-<!-- _class: transition -->
-
-### [Une démo vaut mille mots](https://gtdonnees-gitlab2023.gricad-pages.univ-grenoble-alpes.fr/rexp-notebooks/jupyterlite)
-
----
-# À quoi ça peut servir ? 
-
-Les notebooks sont des outils vraiment pertinents pour *transmettre* de la connaissance : 
-* Documenter l'usage d'un code logiciel 
-* Exposer un raisonnement, une méthodologie incluant du code logiciel
-* Écrire des articles enrichis, des tutos, des HOWTO
-* etc.
-
-
----
-# À quoi ça ne devrait pas servir ?
-
-* **Développer du code logiciel !** : Code dans les notebooks difficilement maintenable, modulaire, lisible, etc. 
-* **Fournir un notebook ne garantit pas, en soi, la reproductibilité du travail ainsi présenté !**
-* Selon l'environnement d'exécution, performances médiocres
+* Ce que je ne présenterai pas 
+  - Des outils en détail
+  - Des méthodes qui garantissent à coups sûr la reproductibilité dans le contexte numérique
 
 ---
 # TOC
 
 <!-- _class: cool-list -->
 
-1. *Les notebooks jupyter, qu'est-ce que c'est ?*
-2. ***Quelques considérations pratiques***
-3. *GitLab pour partager vos notebooks*
-
----
-# Comment exécuter un notebook ? 
-
-Sur son ordinateur, la méthode classique
-
-- On installe `jupyterlab` sur son ordinateur
-- On installe les librairies logicielles dont notre code, dans nos notebooks, a besoin
-- On lance un serveur jupyter sur notre ordinateur
-- On accède aux notebooks via le navigateur 
-
----
-# Quelques freins
-
-* L'interface client/serveur perturbante pour les débutants
-* Beaucoup de choses à installer...
-* ...qui peuvent faire intervenir diffrents outils, plus ou moins disponible selon les ordinateurs
-
----
-# Et pour une formation ? 
-
-Si vous voulez proposer des supports de formations à plusieurs étudiants :
-* Il faudra qu'ils fassent tout de leur côté :  
-  * Avec des OS potentiellement hétérogènes
-  * Avec des compétences hétérogènes
-* Ou alors, il va falloir proposer un serveur de notebooks vous-même accessible aux étudiants : fastideux et qui peut-être compliqué.
+1. *La crise de la reproductibilité*
+2. *Les expérimentations numériques*
+3. *Les reproductibilités*
+4. *Vers où aller et comment ?*
 
 ---
 # TOC
 
 <!-- _class: cool-list -->
 
-1. *Les notebooks jupyter, qu'est-ce que c'est ?*
-2. *Quelques considérations techniques*
-3. ***GitLab pour partager vos notebooks***
+1. ***La crise de la reproductibilité***
+2. *Les expérimentations numériques*
+3. *Les reproductibilités*
+4. *Vers où aller et comment ?*
 
 ---
-# GitLab à la rescousse
+<!-- _class: cite -->
 
-Grâce à GitLab, il est possible de fournir des notebooks ET leur environnement d'exécution simplement !
+<div class="cite-author" data-text="1,500 scientists lift the lid on reproducibility (Nature, 2016)">
 
-Nous allons parcourir deux options pour ce faire : 
-- [BinderHub](https://binderhub.readthedocs.io/en/latest/)
-- [JupyterLite](https://jupyterlite.readthedocs.io/en/latest/)
+More than 70% of researchers have tried and failed to reproduce another scientist's experiments, and more than half have failed to reproduce their own experiments.
 
 ---
-# BinderHub
+# La crise de la  reproductibilité
 
-BinderHub est un service web qui permet, à la volée, à partir d'un projet GitLab publique, de déployer à la volée des environnements d'exécution de notebooks. 
 
-- [Un site basé sur ce service accessible au grand public](https://mybinder.org)
-- [Le site basé sur ce service pour le site ESR grenoblois](jupyterhub.univ-grenoble-alpes.fr) (VPN UGA requis)
+***1905: Über die von der molekularkinetischen Theorie der Wärme geforderte Bewegung von in ruhenden *by A. Einstein***
 
----
-<!-- _class: transition -->
-
-### [Un petit tour sur le projet GitLab...](https://gricad-gitlab.univ-grenoble-alpes.fr/gtdonnees-gitlab2023/rexp-notebooks)
-
-### [...BinderHub en action](https://binderhub.univ-grenoble-alpes.fr)
+* Un seul auteur, raisonnement principalement verbal
+* Un étudiant motivé peut vérifier lui-même l'exactitude des calculs
 
 ---
-# Jupyterlite
+# La crise de la  reproductibilité
 
-JupyterLite permet de fournir un environnement d'exécution JupyterLab sans l'architecture client/serveur (et donc sans les complications qui vont avec)
+**2022: Evolutionary-scale prediction of atomic level protein structure with a language model *by Z. Zin & al.***
 
-* En une commande, jupyterlite génère un site statique (des pages html simples), accompagné de vos notebooks et d'autres fichiers si vous le souhaitez
-* À l'aide d'un serveur web, **ce site s'exécutera comme une interface jupyterlab dans le navigateur de l'étudiant**
+* 15 auteurs, références à des logiciels
+* “[...] we scale language models from 8 million parameters up to **15 billion parameters.**”
+* Code et données semblent disponibles... mais peut-on réellement vérifier l'exactitude des calculs ? 
+  
+---
+# Intérêt de la reproductibilité
+
+Reproductibilité : preuve de **rigueur** qui inspire **confiance**
+
+- Ce qu'un résultat non-reproductible suggère :
+  - Une description de la méthodologie incomplète
+  - une maîtrise insuffisante des techniques
+  - une erreur 
+  - une fraude
+
+--- 
+# Intérêt de la reproductibilité
+
+Reproductibilité : preuve de **rigueur** qui inspire **confiance**
+
+- Ce qu'un résultat non-reproductible suggère :
+  - Une description de la méthodologie incomplète
+  - une maîtrise insuffisante des techniques
+  - une erreur 
+  - une fraude
+- L'importance de la confiance
+  - pour vous-même
+  - pour les sciences (résultats solides et donc féconds)
+  - pour l'ensemble de la société
 
 ---
-# En quoi c'est plus simple ? 
+# Les traitements numériques 
 
-Mais comment j'installe et je configure un serveur web ? 
+![bg right fit](./fig/exp_num.png)
 
-* GitLab peut le faire pour vous !...
-* À l'aide de la CI/CD, dans le `.gitlab-ci.yml`, il suffit de générer le site avec JupyterLite et de le publier avec GitLab Pages.  
-
----
-<!-- _class: transition -->
-
-### [Retour sur le projet GitLab...](https://gricad-gitlab.univ-grenoble-alpes.fr/gtdonnees-gitlab2023/rexp-notebooks)
-
-### [...JupyterLite en live](https://gtdonnees-gitlab2023.gricad-pages.univ-grenoble-alpes.fr/rexp-notebooks/jupyterlite/)
+- Une large majorité des résultats scientifiques repose, aujourd'hui, sur un ***traitement numérique***
+- Un résultat scientifique : 
+    - Expérience (parfois elle-même numérique)
+    - Un **traitement numérique**
 
 ---
-# TL;DR (1/3)
+# TOC
 
-Les notebooks sont de chouettes outils : 
-- Pour exposer une méthodologie
-- En tant que support de cours
-- Pour expliquer le fonctionnement d'un code logiciel/d'une chaîne de traitement de données
+<!-- _class: cool-list -->
 
----
-# TL;DR (2/3)
-
-Les notebooks ne sont pas adaptés pour : 
-- La reproductibilité (ils ne la garantissent pas)
-- Le développement logiciel
-- La performance (calcul et IO)
+1. *La crise de la reproductibilité*
+2. ***Les expérimentations numériques***
+3. *Les reproductibilités*
+4. *Vers où aller et comment ?*
 
 ---
-# TL;DR (3/3)
+# Quelques cas d'usages
 
-Vous avez à votre disposition au moins 2 méthodes pour déployer simplement un environnement d'exécution pour vos notebooks, facilement diffusables et partageables (une url simple à transmettre) :
-* BinderHub
-* JupyterLite
+- Statistiques sur une enquête
+- Nettoyage, normalisation, etc. de données brutes de mesures
+- Simulations numériques
+- Calcul de quantités résumantes (*e.g.* stats, courbes), visualisation
 
-[N'hésitez pas à vous inspirer de ce dépôt pour déployer vos environnements d'exécution de notebooks !](https://gricad-gitlab.univ-grenoble-alpes.fr/gtdonnees-gitlab2023/rexp-notebooks)
+---
+# Quelques cas d'usages
+
+- Statistiques sur une enquête
+- Nettoyage, normalisation, etc. de données brutes de mesures
+- Simulations numériques
+- Calcul de quantités résumantes (*e.g.* stats, courbes), visualisation
+
+*Points communs de ces **expérimentations numériques** : données numériques & code(s) logiciel(s)*
+
+--- 
+# Expérimentations numériques
+
+![w:900 center](./fig/num.png)
+
+---
+# Quels outils et quelles pratiques indispensables pour les expérimentations numériques ?
+
+Objectif : dans le **contexte numérique**, nous aider **faire montre de rigueur** à travers une pratique **transparente**, **lisible** et **accessible** dans la méthodogie employée pour (re)produire de la connaissance
+
+---
+# Open source (et libre, si possible)
+
+* Exigence de **transparence** (et d'**accessibilité**)
+* Perennité dans le temps *plus* assurée (*software heritage*)
+* La plupart des logiciels closed source ont des **alternatives** (e.g. matlab vs python, intel-compiler vs. gcc)
+* **Linux** (et, UNIX) : point focal de l'open source ; Environnement logiciel **aussi** open source/libre
+* *N'oubliez pas d'aposer une licence logicielle sur votre code source...*
+
+--- 
+# Transparent ≠ Lisible
+
+```c
+           main(l
+      ,a,n,d)char**a;{
+  for(d=atoi(a[1])/10*80-
+ atoi(a[2])/5-596;n="@NKA\
+CLCCGZAAQBEAADAFaISADJABBA^\
+SNLGAQABDAXIMBAACTBATAHDBAN\
+ZcEMMCCCCAAhEIJFAEAAABAfHJE\
+TBdFLDAANEfDNBPHdBcBBBEA_AL\
+ H E L L O,    W O R L D! "
+   [l++-3];)for(;n-->64;)
+      putchar(!d+++33^
+           l&1);}
+```
+
+---
+# Documentation (au sens large)
+
+* Exigence de **lisibilité**
+* Du logiciel que vous développez ou que vous utilisez
+* Plusieurs formes : description des commandes utilisées, des algorithmes, commentaires dans le code, code lui-même explicite, notebooks, etc. 
+  
+* *Tout ce qui est **indispensable** pour comprendre et rééxecuter (au niveau de votre logiciel) votre **méthodologie** doit être **explicitée**.*
+
+--- 
+# Développement de code : Forge logicielle
+
+* Ensemble d'outils, le plus souvent accessible sur le web, pour gérer et diffuser des codes sources : e.g. **gitlab**, github, bitbucket, etc.
+* Basée sur un **gestionnaire de version** (*e.g.* **git**, svn, mercurial)
+* Permet de : 
+  * gérer son code proprement, de façon collaborative si besoin, le sauvegarder 
+  * De publier son code
+  * De publier de la documentation (doc proprement dite, accès au code, site web)
+  * De mettre en place, entre autres, des mécanismes des tests automatiques (*intégration continue*, à utiliser avec parcimonie) 
+
+--- 
+# Remarques en vrac
+
+---
+# Le choix des outils logiciels
+
+* Pratiques et outils standards :
+  * Compilation : *e.g.* make, cmake
+  * Distribution de votre code : CRAN, pypi ;
+  * Respectez les normes ! (codage, empaquetage, etc.)
+* Privilégiez les outils qui ont une communauté active...
+* ...mais pas au détriment du cahier des charges ! 
+
+---
+# Performance et reproductibilité
+
+* **Utilisez les bons outils :** Par exemple, un langage compilé sera souvent plus adapté au besoin de performance qu'un langage interprété
+* **Peut rentrer en conflit** avec l'exigence de lisibilité et, parfois, de transparence et/ou d'accessibilité (*e.g.* compilateur intel, code involontairement obfusqué). 
+* **Accentue la dépendance** à l'environnement logiciel et matériel 
+* **Effet rebond** : cf. Prés. L. Bourgès et C. Bonamy
+* Doit répondre à un *réel* besoin de performance
+
+---
+# Les notebooks
+
+* Un notebook (interface mélangeant texte, support visuel et code logiciel) : 
+  * Est un bon outil pour **expliquer une méthodologie**, présenter des résultats
+  * Peut être un bon outil pour reproduire de simples calculs 
+  * Peut être une bonne interface pour exécuter des calculs
+  * N'est pas souvent un bon outil pour *construire et reproduire* une expérimentation numérique (sauf exploration)
+
+---
+# Quelques mots sur l'environnement logiciel (open source)
+
+![w:900 center](./fig/num3.png)
+
+---
+# Quelques mots sur l'environnement logiciel (open source)
+
+* Crucial pour la reproductibilité computationnelle...
+* ...Mais sujet complexe, notamment pour les néophytes (et pas que).
+* **Les conteneurs ne sont pas la panacée. Ni conda !**
+* N'hésitez pas à demander de l'aide sur ces sujets (*e.g.* ITA de labos, GRICAD) !
+
+* [*Présentation de L. Courtès à l'ANF UST4HPC (Guix inside)*](https://www.canal-u.tv/video/groupe_calcul/au_dela_des_conteneurs_environnements_reproductibles_avec_gnu_guix.59571)
+
+---
+# TL;DR
+
+Pour tendre vers une recherche reproductible dans le contexte numérique, adoptez des pratiques et des outils qui vous aident à respecter : 
+* L'exigence de **transparence**
+* L'exigence de **lisibilité** 
+* L'exigence d'**accessibilité**
+
+---
+# TL;DR bis
+
+Mais ça ne suffit pas !
+* Utilisez ces outils rigoureusement : N'hésitez pas à **vous former** !
+* Si vous ne savez pas, n'hésitez pas à **demander de l'aide** (GRICAD :)) ! 
+* ***La rigueur prend du temps.***
 
 ---
 <!-- _class: transition -->
