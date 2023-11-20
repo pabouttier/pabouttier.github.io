@@ -27,7 +27,7 @@ build-site:
     - hugo
   artifacts:
     paths:
-      - public
+      - src/public
 
 # build-jupyterlite:
 #   stage: build
