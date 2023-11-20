@@ -1,0 +1,50 @@
+stages:
+  - build
+  - deploy
+
+build-slides:
+  stage: build
+  image:
+    name: marpteam/marp-cli
+    entrypoint: [""]
+  variables: 
+    MARP_OUTPUT_PATH: 'talks/'
+    MARP_INPUT_PATH: './slides/'
+  script:
+    - export MARP_USER="$(id -u):$(id -g)"
+    - /home/marp/.cli/docker-entrypoint -I $MARP_INPUT_PATH --allow-local-files  -o $MARP_OUTPUT_PATH --html
+    - /home/marp/.cli/docker-entrypoint -I $MARP_INPUT_PATH --allow-local-files  --pdf -o $MARP_OUTPUT_PATH --html
+    - cp -r $MARP_INPUT_PATH/fig/ $MARP_INPUT_PATH/styles/*.css $MARP_OUTPUT_PATH
+  artifacts:
+    paths:
+      - slides
+
+build-site:
+  stage: build
+  image: ${CI_TEMPLATE_REGISTRY_HOST}/pages/hugo:latest
+  script: 
+    - cd src
+    - hugo
+  artifacts:
+    paths:
+      - public
+
+# build-jupyterlite:
+#   stage: build
+#   image: "python:3.9"
+#   before_script:
+#     - python3 -m pip install -r requirements.txt -r jupyterlite.txt
+#   script:
+#     - jupyter lite build --contents notebooks
+#   artifacts:
+#     paths:
+#       - _output
+
+pages:
+  stage: deploy
+  script:
+    - mv src/public public
+    - mv talks public/talks
+  artifacts:
+    paths:
+      - public
