@@ -98,25 +98,10 @@ Reproductibilité : preuve de **rigueur** qui inspire **confiance**
 
 Reproductibilité : preuve de **rigueur** qui inspire **confiance**
 
-- Ce qu'un résultat non-reproductible suggère :
-  - Une description de la méthodologie incomplète
-  - une maîtrise insuffisante des techniques
-  - une erreur 
-  - une fraude
 - L'importance de la confiance
   - pour vous-même
   - pour les sciences (résultats solides et donc féconds)
   - pour l'ensemble de la société
-
----
-# Les traitements numériques 
-
-![bg right fit](./fig/exp_num.png)
-
-- Une large majorité des résultats scientifiques repose, aujourd'hui, sur un ***traitement numérique***
-- Un résultat scientifique : 
-    - Expérience (parfois elle-même numérique)
-    - Un **traitement numérique**
 
 ---
 # TOC
@@ -147,10 +132,14 @@ Reproductibilité : preuve de **rigueur** qui inspire **confiance**
 *Points communs de ces **expérimentations numériques** : données numériques & code(s) logiciel(s)*
 
 --- 
-# Expérimentations numériques
+# Les traitements numériques 
 
-![w:900 center](./fig/num.png)
+![bg right fit](./fig/exp_num.png)
 
+- Une large majorité des résultats scientifiques repose, aujourd'hui, sur un ***traitement numérique***
+- Un résultat scientifique : 
+    - Expérience (parfois elle-même numérique)
+    - Un **traitement numérique**
 ---
 # Quels outils et quelles pratiques indispensables pour les expérimentations numériques ?
 
@@ -160,27 +149,28 @@ Objectif : dans le **contexte numérique**, nous aider **faire montre de rigueur
 # Open source (et libre, si possible)
 
 * Exigence de **transparence** (et d'**accessibilité**)
-* Perennité dans le temps *plus* assurée (*software heritage*)
+* Perennité dans le temps **mieux** assurée (*software heritage*)
 * La plupart des logiciels closed source ont des **alternatives** (e.g. matlab vs python, intel-compiler vs. gcc)
-* **Linux** (et, UNIX) : point focal de l'open source ; Environnement logiciel **aussi** open source/libre
-* *N'oubliez pas d'aposer une licence logicielle sur votre code source...*
+* **Linux** (et UNIX) : point focal de l'open source ; Environnement logiciel **aussi** open source/libre
+* *N'oubliez pas d'aposer une licence logicielle sur votre code source !*
 
 --- 
 # Transparent ≠ Lisible
 
 ```c
-           main(l
-      ,a,n,d)char**a;{
-  for(d=atoi(a[1])/10*80-
- atoi(a[2])/5-596;n="@NKA\
-CLCCGZAAQBEAADAFaISADJABBA^\
-SNLGAQABDAXIMBAACTBATAHDBAN\
-ZcEMMCCCCAAhEIJFAEAAABAfHJE\
-TBdFLDAANEfDNBPHdBcBBBEA_AL\
- H E L L O,    W O R L D! "
-   [l++-3];)for(;n-->64;)
-      putchar(!d+++33^
-           l&1);}
+m(f,a,s)char*s;
+{char c;return f&1?a!=*s++?m(f,a,s):s[11]:f&2?a!=*s++?1+m(f,a,s):1:f&4?a--?
+ putchar(*s),m(f,a,s):a:f&8?*s?m(8,32,(c=m(1,*s++,"Arjan Kenter. \no$../.\""),
+ m(4,m(2,*s++,"POCnWAUvBVxRsoqatKJurgXYyDQbzhLwkNjdMTGeIScHFmpliZEf"),&c),s)):
+ 65:(m(8,34,"rgeQjPruaOnDaPeWrAaPnPrCnOrPaPnPjPrCaPrPnPrPaOrvaPndeOrAnOrPnOrP\
+nOaPnPjPaOrPnPrPnPrPtPnPrAaPnBrnnsrnnBaPeOrCnPrOnCaPnOaPnPjPtPnAaPnPrPnPrCaPn\
+BrAnxrAnVePrCnBjPrOnvrCnxrAnxrAnsrOnvjPrOnUrOnornnsrnnorOtCnCjPrCtPnCrnnirWtP\
+nCjPrCaPnOtPrCnErAnOjPrOnvtPnnrCnNrnnRePjPrPtnrUnnrntPnbtPrAaPnCrnnOrPjPrRtPn\
+CaPrWtCnKtPnOtPrBnCjPronCaPrVtPnOtOnAtnrxaPnCjPrqnnaPrtaOrsaPnCtPjPratPnnaPrA\
+aPnAaPtPnnaPrvaPnnjPrKtPnWaOrWtOnnaPnWaPrCaPnntOjPrrtOnWanrOtPnCaPnBtCjPrYtOn\
+UaOrPnVjPrwtnnxjPrMnBjPrTnUjP"),0);}
+
+main(){return m(0,75,"mIWltouQJGsBniKYvTxODAfbUcFzSpMwNCHEgrdLaPkyVRjXeqZh");}
 ```
 
 ---
@@ -204,7 +194,7 @@ TBdFLDAANEfDNBPHdBcBBBEA_AL\
   * De mettre en place, entre autres, des mécanismes des tests automatiques (*intégration continue*, à utiliser avec parcimonie) 
 
 --- 
-# Remarques en vrac
+# Mais aussi...
 
 ---
 # Le choix des outils logiciels
@@ -222,7 +212,7 @@ TBdFLDAANEfDNBPHdBcBBBEA_AL\
 * **Utilisez les bons outils :** Par exemple, un langage compilé sera souvent plus adapté au besoin de performance qu'un langage interprété
 * **Peut rentrer en conflit** avec l'exigence de lisibilité et, parfois, de transparence et/ou d'accessibilité (*e.g.* compilateur intel, code involontairement obfusqué). 
 * **Accentue la dépendance** à l'environnement logiciel et matériel 
-* **Effet rebond** : cf. Prés. L. Bourgès et C. Bonamy
+* **Effet rebond** : cf. [plaquette dév. log. EcoInfo](https://ecoinfo.cnrs.fr/2020/11/20/plaquette-je-code-les-bonnes-pratiques-en-eco-conception-de-service-numerique-a-destination-des-developpeurs-de-logiciels/)
 * Doit répondre à un *réel* besoin de performance
 
 ---
