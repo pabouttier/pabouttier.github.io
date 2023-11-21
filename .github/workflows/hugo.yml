@@ -50,38 +50,28 @@ jobs:
         uses: actions/configure-pages@v3
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
-      - name: list root dir
-        run: "ls"
-      - name: Going into the Hugo directory
-        run: "cd ./src/"
-      - name: list src dir
-        run: "ls"
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
+          cd src
           hugo \
             --gc \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/" 
-      - name: Move public folder
-        run: "cd .. && mv src/public ."
-      - name: Going into the marp directory
-        run: "cd slides"
+            --baseURL "${{ steps.pages.outputs.base_url }}/"
+          mv public ..
       - name: Ensure talks dir exists
-        run: "mkdir -p talks"
+        run: "mkdir -p public/talks"
       - name: copy files and css into talks
-        run: "cp -r fig styles talks/"
+        run: "cp -r slides/fig slides/styles public/talks/"
       - name: Marp Build (README.pdf)
         uses: docker://marpteam/marp-cli:v3.4.0
         with:
-          args: -I . -o ./talks --html
+          args: -I ./slides/ -o ./public/talks --html
         env:
           MARP_USER: root:root
-      - name: Move slides folder
-        run: "cd .. && mv slides/talks ./public/"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
