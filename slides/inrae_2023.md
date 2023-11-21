@@ -8,7 +8,6 @@ footer: INRAE, sète, 23/11/2023 - pierre-antoine.bouttier@univ-grenoble-alpes.f
 
 <!-- _class: titlepage -->
 
-![bg left:33% fit](fig/jupgiter.png)
 # Gérer les expérimentations numériques…
 ## **…ou comment rendre la recherche plus reproductible**
 
@@ -34,6 +33,7 @@ footer: INRAE, sète, 23/11/2023 - pierre-antoine.bouttier@univ-grenoble-alpes.f
   - Grandes hétérogénéités (de public, de pratiques, d'outils, de niveaux de compétences, de culture numérique, *etc.*)
 
 * Ce que je ne présenterai pas 
+  - L'épistémologie 
   - Des outils en détail
   - Des méthodes qui garantissent à coups sûr la reproductibilité dans le contexte numérique
 
@@ -44,8 +44,7 @@ footer: INRAE, sète, 23/11/2023 - pierre-antoine.bouttier@univ-grenoble-alpes.f
 
 1. *La crise de la reproductibilité*
 2. *Les expérimentations numériques*
-3. *Les reproductibilités*
-4. *Vers où aller et comment ?*
+3. *Vers où aller et comment ?*
 
 ---
 # TOC
@@ -151,6 +150,21 @@ Reproductibilité : preuve de **rigueur** qui inspire **confiance**
 - Un résultat scientifique : 
     - Expérience (parfois elle-même numérique)
     - Un **traitement numérique**
+
+--- 
+# Les traitements numériques 
+
+![bg right fit](./fig/exp_num.png)
+
+- *La reproductibilité d'un traitement numérique* suppose, **a minima** de contrôler
+  * Le programme
+  * Les données
+  * L'environnement
+
+---
+# Just a scratch...
+
+![Just a scratch](http://www.phdcomics.com/comics/archive/phd031214s.gif)
 
 ---
 # TOC
@@ -279,7 +293,7 @@ Mais ça ne suffit pas !
 * Utilisez ces outils rigoureusement : N'hésitez pas à **vous former** !
 * Si vous ne savez pas, n'hésitez pas à **demander de l'aide** ! 
 * ***La rigueur prend du temps...***
-* ... Mais les bénéfices scientifiques sont nombreux ! 
+* ... Mais les bénéfices scientifiques et techniques sont nombreux ! 
 
 ---
 <!-- _class: transition -->
