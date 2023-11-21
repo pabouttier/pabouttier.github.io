@@ -63,8 +63,7 @@ jobs:
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/" 
       - name: Move public folder
-        run: "cd .."
-        run: "mv src/public ."
+        run: "cd .. && mv src/public ."
       - name: Going into the marp directory
         run: "cd slides"
       - name: Ensure talks dir exists
@@ -78,8 +77,7 @@ jobs:
         env:
           MARP_USER: root:root
       - name: Move slides folder
-        run: "cd .."
-        run: "mv slides/talks ./public/"
+        run: "cd .. && mv slides/talks ./public/"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
