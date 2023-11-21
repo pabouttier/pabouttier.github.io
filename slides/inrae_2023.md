@@ -207,6 +207,8 @@ UaOrPnVjPrwtnnxjPrMnBjPrTnUjP"),0);}
 
 main(){return m(0,75,"mIWltouQJGsBniKYvTxODAfbUcFzSpMwNCHEgrdLaPkyVRjXeqZh");}
 ```
+
+> Pour tester : `gcc -Wno-implicit-function-declaration ...`
 ---
 # Documentation (au sens large)
 
