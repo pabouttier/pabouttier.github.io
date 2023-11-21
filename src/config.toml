@@ -54,7 +54,7 @@ disableHugoGeneratorInject = false
   dateformNumTime = "2006-01-02 15:04 -0700"
 
   # Metadata mostly used in document's head
-  description = "Timeline hugo template for your work experience, researches, achievement and more"
+  description = "Timeline for P-A Bouttier talks"
   keywords = "talks slides bouttier gricad"
   images = [""]
 
@@ -82,7 +82,7 @@ disableHugoGeneratorInject = false
 
   # Default theme "light" or "dark"
   defaultTheme = "light"
-  themeColor = "#252627"
+  themeColor = "#ff7700"
 
   # Colors for favicons
   [params.favicon.color]
@@ -96,7 +96,7 @@ disableHugoGeneratorInject = false
     # Set true to remove the logo cursor entirely.
     # logoCursorDisabled = false
     # Set to a valid CSS color to change the cursor in the logo.
-    logoCursorColor    = "#67a2c9"
+    logoCursorColor    = "#ff7700"
     # Set to a valid CSS time value to change the animation duration, "0s" to disable.
     # logoCursorAnimate  = "2s"
 
@@ -133,7 +133,7 @@ disableHugoGeneratorInject = false
   [languages.en]
     subtitle  = "P-A Bouttier"
     weight    = 1
-    copyright = ''
+    copyright = '<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />'
 
   [languages.fr]
     subtitle  = "P-A Bouttier"
@@ -142,7 +142,7 @@ disableHugoGeneratorInject = false
 
 [menu]
   [[menu.main]]
-    identifier = "timeline"
+    identifier = "talks"
     name       = "P-A Bouttier talks"
     url        = "timeline/"
     weight     = 1
