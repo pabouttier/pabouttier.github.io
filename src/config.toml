@@ -1,5 +1,5 @@
 baseURL = "https://slides.gricad-pages.univ-grenoble-alpes.fr/global/"
-title   = "Bunch of slides"
+title   = "P-A Bouttier"
 languageCode = "fr-fr"
 theme = "timeline"
 
@@ -20,7 +20,7 @@ layoutDir    = "layouts"
 publishDir   = "public"
 
 buildDrafts  = false
-buildFuture  = false
+buildFuture  = true
 buildExpired = false
 canonifyURLs = true
 
@@ -138,14 +138,20 @@ disableHugoGeneratorInject = false
   [languages.fr]
     subtitle  = "P-A Bouttier"
     weight    = 2
-    copyright = '<a href="https://github.com/s4n7h0/hugo-theme-timeline/blob/main/LICENSE" target="_blank" rel="noopener">MIT</a>'
+    copyright = '<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />'
 
 [menu]
   [[menu.main]]
     identifier = "talks"
-    name       = "P-A Bouttier talks"
+    name       = "Talks"
     url        = "timeline/"
     weight     = 1
+
+  [[menu.main]]
+    identifier = "cv"
+    name       = "CV"
+    url        = "https://pabouttier.github.io/cv/"
+    weight     = 2
  
 
 [markup]
