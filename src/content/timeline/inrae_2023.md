@@ -12,7 +12,7 @@ eventlocation: Sète, France
 weight: 10
 ---
 
-[**Les slides**](https://github.com/gohugoio/hugo/)
+[**Les slides**](/talks/inrae_2023.html)
 
 ## Abstract
 
