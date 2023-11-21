@@ -66,10 +66,16 @@ jobs:
         run: "mkdir -p public/talks"
       - name: copy files and css into talks
         run: "cp -r slides/fig slides/styles public/talks/"
-      - name: Marp Build (README.pdf)
+      - name: Marp Build (*.html)
         uses: docker://marpteam/marp-cli:v3.4.0
         with:
           args: -I ./slides/ -o ./public/talks --html
+        env:
+          MARP_USER: root:root
+      - name: Marp Build (*.pdf)
+        uses: docker://marpteam/marp-cli:v3.4.0
+        with:
+          args: -I ./slides/ -o ./public/talks --pdf
         env:
           MARP_USER: root:root
       - name: Upload artifact

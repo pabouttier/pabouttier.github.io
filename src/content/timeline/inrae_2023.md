@@ -12,7 +12,7 @@ eventlocation: Sète, France
 weight: 10
 ---
 
-[**Les slides**](/talks/inrae_2023.html)
+[**Les slides HTML**](/talks/inrae_2023.html) - [**Les slides PDF**](/talks/inrae_2023.pdf)
 
 ## Abstract
 
