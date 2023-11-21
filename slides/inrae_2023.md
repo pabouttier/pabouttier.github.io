@@ -111,7 +111,7 @@ Reproductibilité : preuve de **rigueur** qui inspire **confiance**
   - pour les sciences (résultats solides et donc féconds)
   - pour l'ensemble de la société
 
-*Assurer la reproductibilité de résultats scientifiques est un processus* (aux nombreux bénéfices secondaires)
+***Assurer la reproductibilité de résultats scientifiques est un processus (aux nombreux bénéfices secondaires)***
 
 ---
 # TOC
@@ -162,9 +162,9 @@ Reproductibilité : preuve de **rigueur** qui inspire **confiance**
   * L'environnement
 
 ---
-# Just a scratch...
+**Assurer la reproductibilité de résultats scientifiques est un processus aux nombreux bénéfices secondaires**
 
-![bg](http://www.phdcomics.com/comics/archive/phd031214s.gif)
+![w:1100](http://www.phdcomics.com/comics/archive/phd031214s.gif)
 
 ---
 # TOC
