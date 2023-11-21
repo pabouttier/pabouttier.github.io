@@ -51,7 +51,7 @@ jobs:
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       - name: Going into the Hugo directory
-        run: "cd src/"
+        run: "ls && cd ./src/ && ls"
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
