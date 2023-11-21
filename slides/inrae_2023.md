@@ -20,7 +20,7 @@ footer: INRAE, sète, 23/11/2023 - pierre-antoine.bouttier@univ-grenoble-alpes.f
 ---
 # D'où je parle
 
-- Ingénieur de recherche, expert en ingénieurie logicelle, spécialisé en mathématiques appliquées, ...
+- Ingénieur de recherche CNRS, expert en ingénieurie logicelle, spécialisé en mathématiques appliquées, ...
 - ...directeur adjoint de **l'UAR GRICAD**, basée à Grenoble, fournissant **services, infrastructures et expertise** en soutien à toutes les communautés de recherche grenobloises autour du **calcul scientifique**, du **développement logiciel** et de la **gestion des données de la recherche**.  
 - Je ne suis pas...
   - ...un ASR
@@ -54,8 +54,7 @@ footer: INRAE, sète, 23/11/2023 - pierre-antoine.bouttier@univ-grenoble-alpes.f
 
 1. ***La crise de la reproductibilité***
 2. *Les expérimentations numériques*
-3. *Les reproductibilités*
-4. *Vers où aller et comment ?*
+3. *Vers où aller et comment ?*
 
 ---
 <!-- _class: cite -->
@@ -68,7 +67,7 @@ More than 70% of researchers have tried and failed to reproduce another scientis
 # La crise de la  reproductibilité
 
 
-***1905: Über die von der molekularkinetischen Theorie der Wärme geforderte Bewegung von in ruhenden *by A. Einstein***
+***1905: Über die von der molekularkinetischen Theorie der Wärme geforderte Bewegung von in ruhenden *by A. Einstein****
 
 * Un seul auteur, raisonnement principalement verbal
 * Un étudiant motivé peut vérifier lui-même l'exactitude des calculs
@@ -152,6 +151,15 @@ Reproductibilité : preuve de **rigueur** qui inspire **confiance**
 - Un résultat scientifique : 
     - Expérience (parfois elle-même numérique)
     - Un **traitement numérique**
+
+---
+# TOC
+
+<!-- _class: cool-list -->
+
+1. *La crise de la reproductibilité*
+2. *Les expérimentations numériques*
+3. ***Vers où aller et comment ?***
 
 ---
 # Quels outils et quelles pratiques indispensables pour les expérimentations numériques ?
@@ -271,7 +279,7 @@ Mais ça ne suffit pas !
 * Utilisez ces outils rigoureusement : N'hésitez pas à **vous former** !
 * Si vous ne savez pas, n'hésitez pas à **demander de l'aide** ! 
 * ***La rigueur prend du temps...***
-* ...Mais les bénéfices scientifiques sont nombreux ! 
+* ... Mais les bénéfices scientifiques sont nombreux ! 
 
 ---
 <!-- _class: transition -->
