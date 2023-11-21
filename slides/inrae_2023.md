@@ -74,7 +74,7 @@ More than 70% of researchers have tried and failed to reproduce another scientis
 ---
 # La crise de la  reproductibilité
 
-**2022: Evolutionary-scale prediction of atomic level protein structure with a language model *by Z. Zin & al.***
+***2022: Evolutionary-scale prediction of atomic level protein structure with a language model *by Z. Zin & al.****
 
 * 15 auteurs, références à des logiciels
 * “[...] we scale language models from 8 million parameters up to **15 billion parameters.**”
@@ -164,7 +164,7 @@ Reproductibilité : preuve de **rigueur** qui inspire **confiance**
 ---
 # Just a scratch...
 
-![Just a scratch](http://www.phdcomics.com/comics/archive/phd031214s.gif)
+![bg](http://www.phdcomics.com/comics/archive/phd031214s.gif)
 
 ---
 # TOC
