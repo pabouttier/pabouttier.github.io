@@ -19,7 +19,7 @@ footer: INRAE, sète, 23/11/2023 - pierre-antoine.bouttier@univ-grenoble-alpes.f
 ---
 # D'où je parle
 
-- Ingénieur de recherche CNRS, expert en ingénieurie logicelle, spécialisé en mathématiques appliquées, ...
+- Ingénieur de recherche CNRS, expert en ingénierie logicelle, spécialisé en mathématiques appliquées, ...
 - ...directeur adjoint de **l'UAR GRICAD**, basée à Grenoble, fournissant **services, infrastructures et expertise** en soutien à toutes les communautés de recherche grenobloises autour du **calcul scientifique**, du **développement logiciel** et de la **gestion des données de la recherche**.  
 - Je ne suis pas...
   - ...un ASR
@@ -120,8 +120,7 @@ Reproductibilité : preuve de **rigueur** qui inspire **confiance**
 
 1. *La crise de la reproductibilité*
 2. ***Les expérimentations numériques***
-3. *Les reproductibilités*
-4. *Vers où aller et comment ?*
+3. *Vers où aller et comment ?*
 
 ---
 # Quelques cas d'usages
