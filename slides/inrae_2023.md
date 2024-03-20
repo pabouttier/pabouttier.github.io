@@ -3,7 +3,7 @@ marp: true
 theme: socrates
 author: Pierre-Antoine Bouttier
 paginate: true
-footer: INRAE, sète, 23/11/2023 - pierre-antoine.bouttier@univ-grenoble-alpes.fr
+footer: pierre-antoine.bouttier@univ-grenoble-alpes.fr
 ---
 
 <!-- _class: titlepage -->
@@ -11,9 +11,6 @@ footer: INRAE, sète, 23/11/2023 - pierre-antoine.bouttier@univ-grenoble-alpes.f
 # Gérer les expérimentations numériques…
 ## **…ou comment rendre la recherche plus reproductible**
 
-
-### Journées référents données INRAE
-### 23/11/2023
 #### [Pierre-Antoine Bouttier](mailto:pierre-antoine.bouttier@univ-grenoble-alpes.fr)
 
 ---
