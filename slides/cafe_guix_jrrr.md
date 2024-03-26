@@ -3,7 +3,7 @@ marp: true
 theme: socrates
 author: Ludovic  Courtès & Pierre-Antoine Bouttier
 paginate: true
-footer: Café Guix@JRRR, 27/03/2024  - pierre-antoine.bouttier@univ-grenoble-alpes.fr
+footer: Café Guix@JRFRR, 27/03/2024  - pierre-antoine.bouttier@univ-grenoble-alpes.fr
 ---
 
 <!-- _class: titlepage -->
@@ -13,7 +13,7 @@ footer: Café Guix@JRRR, 27/03/2024  - pierre-antoine.bouttier@univ-grenoble-alp
 # Gérer les environnements logiciels avec GUIX...
 ## **...ou comment rendre reproductible les environnements de calcul**
 
-### Café Guix@JRRR - 27/03/2024
+### Café Guix@JRFRR - 27/03/2024
 
 #### L. Courtès & P.-A. Bouttier
 
@@ -365,8 +365,7 @@ Au-delà de la reproductibilité :
     (build-system gnu-build-system)
     (synopsis "Hello, GNU world: An example GNU package")
     (description
-     "GNU Hello prints the message \"Hello, world!\" and then$
-serves as an example of standard GNU coding practices.")
+     "GNU Hello prints the message \"Hello, world!\" and then serves as an example of standard GNU coding practices.")
     (home-page "https://www.gnu.org/software/hello/")
     (license gpl3+)))
 ```
