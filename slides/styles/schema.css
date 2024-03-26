@@ -50,8 +50,8 @@ section.titlepage {
     /* fonts sizes */
     --title-size            : 150%;
     --subtitle-size         : 110%;
-    --author-size           : 110%;
-    --date-size             : 110%;
+    --author-size           : 90%;
+    --date-size             : 90%;
     --institute-size        : 90%;
 
     --letter-spacing        : 0.125px;

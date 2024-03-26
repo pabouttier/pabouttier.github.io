@@ -69,6 +69,10 @@ section.cite {
   text-align: center; 
 }
 
+section.cite * {
+  text-align: center;
+}
+
 section.cite p {
   color: #fffbfe;
 }
@@ -78,7 +82,7 @@ section.cite strong {
 }
 
 .cite-author { 
-      text-align: right; 
+      text-align: center; 
    }
 .cite-author:after {   
       color             : #ff7700;
@@ -86,11 +90,11 @@ section.cite strong {
       font-style        : italic;
       font-weight       : bold;
       font-family       : Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      padding-right     : 130px;
-      text-align        : right; 
+      /* padding-right     : 130px; */
+      text-align        : center; 
    }
    .cite-author[data-text]:after {
-      text-align: right; 
+      text-align        : center; 
       content           : " ~ "attr(data-text) " ~ ";      
    }
    .cite-author p {    

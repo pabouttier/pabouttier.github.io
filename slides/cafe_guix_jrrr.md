@@ -6,12 +6,15 @@ paginate: true
 footer: Café Guix@JRRR, 27/03/2024  - pierre-antoine.bouttier@univ-grenoble-alpes.fr
 ---
 
+<!-- _class: titlepage -->
+
 ![bg left:20% fit](./fig/guix-logo.png)
 
 # Gérer les environnements logiciels avec GUIX...
 ## **...ou comment rendre reproductible les environnements de calcul**
 
 ### Café Guix@JRRR - 27/03/2024
+
 #### L. Courtès & P.-A. Bouttier
 
 ---
@@ -20,16 +23,6 @@ footer: Café Guix@JRRR, 27/03/2024  - pierre-antoine.bouttier@univ-grenoble-alp
 <div class="cite-author" data-text="1,500 scientists lift the lid on reproducibility (Nature, 2016)">
 
 More than 70% of researchers have tried and failed to reproduce another scientist's experiments, and more than half have failed to reproduce their own experiments.
-
----
-# Les traitements numériques 
-
-![bg right fit](./fig/exp_num.png)
-
-- Une large majorité des résultats scientifiques repose, aujourd'hui, sur un ***traitement numérique***
-- Un résultat scientifique : 
-    - Expérience (parfois elle-même numérique)
-    - Un **traitement numérique**
 
 ---
 # Open stuff 
