@@ -3,9 +3,10 @@ marp: true
 theme: socrates
 author: Ludovic  Courtès & Pierre-Antoine Bouttier
 paginate: true
-footer: Café Guix@JRRR, 27/03/2024  - *pierre-antoine.bouttier@univ-grenoble-alpes.fr*
+footer: Café Guix@JRRR, 27/03/2024  - pierre-antoine.bouttier@univ-grenoble-alpes.fr
 ---
-<!-- headingDivider: 2 -->
+
+![bg left:20% fit](./fig/guix-logo.png)
 
 # Gérer les environnements logiciels avec GUIX...
 ## **...ou comment rendre reproductible les environnements de calcul**
@@ -14,20 +15,11 @@ footer: Café Guix@JRRR, 27/03/2024  - *pierre-antoine.bouttier@univ-grenoble-al
 #### L. Courtès & P.-A. Bouttier
 
 ---
-# Parlons reproductibilité
+<!-- _class: cite -->
 
-> More than 70% of researchers have tried and failed to reproduce another scientist's experiments, and more than half have failed to reproduce their own experiments.
-> 
-> [*1,500 scientists lift the lid on reproducibility (Nature, 2016)*](https://www.nature.com/articles/533452a)
+<div class="cite-author" data-text="1,500 scientists lift the lid on reproducibility (Nature, 2016)">
 
----
-# Parlons reproductibilité
-
-> More than 70% of researchers have tried and failed to reproduce another scientist's experiments, and more than half have failed to reproduce their own experiments.
-> 
-> [*1,500 scientists lift the lid on reproducibility (Nature, 2016)*](https://www.nature.com/articles/533452a)
-
-**La reproductibilité est pourtant l'un des piliers de la méthode scientifique.**
+More than 70% of researchers have tried and failed to reproduce another scientist's experiments, and more than half have failed to reproduce their own experiments.
 
 ---
 # Les traitements numériques 

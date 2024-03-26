@@ -78,7 +78,7 @@ section.cite strong {
 }
 
 .cite-author { 
-      text-align: center; 
+      text-align: right; 
    }
 .cite-author:after {   
       color             : #ff7700;
@@ -87,11 +87,13 @@ section.cite strong {
       font-weight       : bold;
       font-family       : Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       padding-right     : 130px;
+      text-align        : right; 
    }
    .cite-author[data-text]:after {
+      text-align: right; 
       content           : " ~ "attr(data-text) " ~ ";      
    }
    .cite-author p {    
       padding-bottom : 40px;
-      text-align: center; 
+      /* text-align: center;  */
    }
