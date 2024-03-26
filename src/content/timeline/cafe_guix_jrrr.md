@@ -12,7 +12,7 @@ eventlocation: Grenoble, France
 weight: 10
 ---
 
-[**Les slides HTML**](/talks/cafe_guix_jrrr.html) - [**Les slides PDF**](/talks/cafe_guix@jrrr.pdf)
+[**Les slides HTML**](/talks/cafe_guix_jrrr.html) - [**Les slides PDF**](/talks/cafe_guix_jrrr.pdf)
 
 ## Abstract
 
