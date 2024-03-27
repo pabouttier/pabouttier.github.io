@@ -10,7 +10,7 @@ footer: Café Guix@JRFRR, 27/03/2024  - pierre-antoine.bouttier@univ-grenoble-al
 
 ![bg left:20% fit](./fig/guix-logo.png)
 
-# Gérer les environnements logiciels avec GUIX...
+# Gérer les environnements logiciels avec Guix...
 ## **...ou comment rendre reproductible les environnements de calcul**
 
 ### Café Guix@JRFRR - 27/03/2024
@@ -91,11 +91,11 @@ Un gestionnaire d'env. log reproductible est également :
 * Très pratique : *e.g.* multiplicité d'environnement isolé sur un même système
 
 ---
-# Parlons peu, parlons GUIX 
+# Parlons peu, parlons Guix 
 
 ![bg right 30%](./fig/guix-logo.png)
 
-Qu'est-ce que GUIX ?
+Qu'est-ce que Guix ?
 
 * Une distribution GNU/Linux...
 * ... mais aussi un gestionnaire d'environnement logiciel **standalone**
@@ -103,7 +103,7 @@ Qu'est-ce que GUIX ?
 ---
 # Des définitions très simples 
 
-* **Un paquet GUIX** : Une **définition** (=code source, fichier texte brut) de l'ensemble des instructions et dépendances pour installer un logiciel
+* **Un paquet Guix** : Une **définition** (=code source, fichier texte brut) de l'ensemble des instructions et dépendances pour installer un logiciel
 * **Un channel Guix** : un **dépôt git** contenant **un ensemble de définitions de paquets** (et quelques fichiers de configurations). Un numéro de commit particulier (donc un état bien identifié des définitions) de ce dépôt peut être appelé révision.
   
 * Un commit précis d'un channel Guix peut être vu comme un instantané du graphe de dépendances entier (des dizaines de milliers de logiciels empaquetés) !
@@ -111,14 +111,14 @@ Qu'est-ce que GUIX ?
 ---
 # Comment ça marche (en très gros) ?
 
-* GUIX construit des binaires (exécutables, librairies, fichiers d'include requis, etc.) à partir des instructions contenues dans leurs définitions, dans un répertoire unique `/gnu/store`
-* Ensuite, à l'aide de liens symboliques et de positionnement des variables d'environnement (gérés par GUIX), l'utilisateur a accès aux logiciels qui lui sont nécessaires.  
+* Guix construit des binaires (exécutables, librairies, fichiers d'include requis, etc.) à partir des instructions contenues dans leurs définitions, dans un répertoire unique `/gnu/store`
+* Ensuite, à l'aide de liens symboliques et de positionnement des variables d'environnement (gérés par Guix), l'utilisateur a accès aux logiciels qui lui sont nécessaires.  
 
 ---
 # Mais en pratique ? 
 
 Prérequis : 
-- Un ordinateur avec les commandes GUIX disponibles (uniquement OS GNU/Linux)
+- Un ordinateur avec les commandes Guix disponibles (uniquement OS GNU/Linux)
 - Une connexion à Internet
 - C'est tout. 
 
@@ -157,11 +157,11 @@ guix package -I
 ```
 
 ---
-# Mise à jour des channels GUIX et des paquets
+# Mise à jour des channels Guix et des paquets
 
-GUIX prend ses définitions à partir d'une version donnée d'un ou plusieurs channels GUIX. 
+Guix prend ses définitions à partir d'une version donnée d'un ou plusieurs channels Guix. 
 
-Pour mettre à jour ces définitions, i.e. passer aux derniers **commits** du/des channel(s) GUIX utilisés : 
+Pour mettre à jour ces définitions, i.e. passer aux derniers **commits** du/des channel(s) Guix utilisés : 
 ```
 guix pull
 ```
@@ -212,7 +212,7 @@ guix package -m /path/vers/manifest.scm
 # Point d'étape
 
 Maintenant, vous savez...
-* ... rechercher, installer, lister et supprimer des paquets GUIX...
+* ... rechercher, installer, lister et supprimer des paquets Guix...
 * ... et que ce n'est pas très compliqué (pas plus que `conda`, `pip`, `apt-get`, `spack`, *etc.*)
 * **Mais comment **je reproduis** cet environnement logiciel ?** 
 
@@ -256,7 +256,7 @@ Cette commande va exécuter le script python dans l'environnement spécifié et 
 
 Pour reproduire un env.log. il faut donc le décrire le plus complètement possible. Nous avons vu auparavant le fichier `manifest.scm`. Il manque une information : l'état des définitions/du graphe des dépendances. 
 
-Nous avons vu précdemment qu'en réalité que celui-ci peut être décrit par la **liste des channels GUIX utilisés et leur numéro de commit courant**. GUIX propose une commande qui regroupe toutes ces informations : 
+Nous avons vu précdemment qu'en réalité que celui-ci peut être décrit par la **liste des channels Guix utilisés et leur numéro de commit courant**. Guix propose une commande qui regroupe toutes ces informations : 
 ```
 guix describe -f channels >> channels.scm
 ```
@@ -298,11 +298,11 @@ guix time-machine -C channels.scm -- shell -C -m manifest.scm
 * C'est tout !
 
 ---
-# Et s'il n'y a pas GUIX dans le futur ou sur une autre machine ? 
+# Et s'il n'y a pas Guix dans le futur ou sur une autre machine ? 
 
 Une solution : les conteneurs ! 
 
-Sur une machine avec GUIX, nous pouvons créer un conteneur, basé sur l'environnement logiciel déployé avec GUIX, toujours avec `guix time-machine` :
+Sur une machine avec Guix, nous pouvons créer un conteneur, basé sur l'environnement logiciel déployé avec Guix, toujours avec `guix time-machine` :
 
 ```
 guix time-machine -C channels.scm -- pack --format=squashfs -m manifest.scm
@@ -315,17 +315,17 @@ guix time-machine -C channels.scm -- pack --format=squashfs -m manifest.scm
 # En résumé
 
 Maintenant, vous savez...
-* ... rechercher, installer, lister et supprimer des paquets GUIX,...
+* ... rechercher, installer, lister et supprimer des paquets Guix,...
 * ... créer des env. isolés,...
 * ... des images de conteneurs,...
 * ... de façon totalement reproductible...
 * ... et que ce n'est pas très compliqué (pas plus (voir moins) que `conda`, `spack`, *etc.*)
 
 ---
-# Le coût de GUIX
+# Le coût de Guix
 
 * Pour les utilisateurs finaux :
-  * Travailler sous GNU/Linux avec où GUIX est disponible
+  * Travailler sous GNU/Linux avec où Guix est disponible
   * Empaquetage des logiciels visés (n'hésitez pas à demander)
   * ?
 * Pour les personnels support : 
@@ -333,7 +333,7 @@ Maintenant, vous savez...
   * ?
 
 ---
-# Les bénéfices de GUIX
+# Les bénéfices de Guix
 
 Au-delà de la reproductibilité : 
 * Portabilité
