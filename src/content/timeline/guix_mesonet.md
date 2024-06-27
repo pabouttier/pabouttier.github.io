@@ -7,7 +7,7 @@ type:
 - post
 - posts
 title: Guix@Mesonet ou comment mutualiser la gestion des environnements logiciels
-eventname: Café Guix@JRRR
+eventname: Guix@Mesonet
 eventlocation: Grenoble, France
 weight: 10
 ---

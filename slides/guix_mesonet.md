@@ -397,7 +397,7 @@ Au-delà de la reproductibilité :
                                   ".tar.gz"))
               (sha256
                (base32
-                "086vqwk2wl8zfs47sq2xpjc9k066ilmb8z6dn0q6ymwj$
+                "086vqwk2wl8zfs47sq2xpjc9k066ilmb8z6dn0q6ymwj$"
     (build-system gnu-build-system)
     (synopsis "Hello, GNU world: An example GNU package")
     (description
