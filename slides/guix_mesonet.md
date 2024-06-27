@@ -42,40 +42,40 @@ footer: Guix@MESONET, 27/06/2024  - pierre-antoine.bouttier@univ-grenoble-alpes.
 ---
 # Le contexte à GRICAD
 
-* ~~4~~ 3 clusters de calcul en propre (un peu plus de 6500 coeurs CPU, environ 100 GPUs)...
-* ...reliés entre eux et à des clusters de labos par une grille de calcul locale
-* Utilisations : 
-  *  HPC, HTC
-  *  Traitement de données
-  * Visu, formation & développement
-* **Grande hétérogénéité** des usages, des communautés, des niveaux de compétences utilisateur et, du coup, des piles logicielles
-* **Le défi** : trouver un outil de gestion d'environnement logiciel qui réponde à des contraintes très hétérogènes
+- ~~4~~ 3 clusters de calcul en propre (un peu plus de 6500 coeurs CPU, environ 100 GPUs)...
+- ...reliés entre eux et à des clusters de labos par une grille de calcul locale
+- Utilisations : 
+  -  HPC, HTC
+  -  Traitement de données
+  - Visu, formation & développement
+- **Grande hétérogénéité** des usages, des communautés, des niveaux de compétences utilisateur et, du coup, des piles logicielles
+- **Le défi** : trouver un outil de gestion d'environnement logiciel qui réponde à des contraintes très hétérogènes
 
 ---
 # Le contexte de la politique scientifique
 
-* **La Science Ouverte** : Comment assurer la reproductibilité des traitements numériques ?
-  * Bonnes pratiques de développement logiciel 
-  * Et l'environnement logiciel ?  
+- **La Science Ouverte** : Comment assurer la reproductibilité des traitements numériques ?
+  - Bonnes pratiques de développement logiciel 
+  - Et l'environnement logiciel ?  
   
-* Changements de pratique
-  * Utilisation croissantes des plateformes non-HPC : jupyterhub, binderhub, cloud computing...
-  * ...dans la même chaîne de traitement
-  * Développement de plateformes calcul/données distribuées
+- Changements de pratique
+  - Utilisation croissantes des plateformes non-HPC : jupyterhub, binderhub, cloud computing...
+  - ...dans la même chaîne de traitement
+  - Développement de plateformes calcul/données distribuées
 
 ---
 # The Good Ol' days
 
-* Jusqu'à 2015, utilisation de module
-  * Classique, bien connu 
-  * Utilisé au tiers-1 et au tiers-2
-  * Usages et communautés (beaucoup) plus homogènes
+- Jusqu'à 2015, utilisation de module
+  - Classique, bien connu 
+  - Utilisé au tiers-1 et au tiers-2
+  - Usages et communautés (beaucoup) plus homogènes
   
-* Mais des gênes se font sentir : 
-  * **Portabilité très moyenne** (indispensable pour notre petite grille !)
-  * **Duplication des efforts** proportionnelle au nombre de clusters
-  * **Aspect communautaire marginal** (*e.g.* pas de partage direct de paquets, binaires)
-  * ...
+- Mais des gênes se font sentir : 
+  - **Portabilité très moyenne** (indispensable pour notre petite grille !)
+  - **Duplication des efforts** proportionnelle au nombre de clusters
+  - **Aspect communautaire marginal** (*e.g.* pas de partage direct de paquets, binaires)
+  - ...
 
 ---
 # L'utopie des environnements logiciels ? 
@@ -103,11 +103,11 @@ footer: Guix@MESONET, 27/06/2024  - pierre-antoine.bouttier@univ-grenoble-alpes.
 # Les mécanismes fondamentaux des FPM
 
 Les gestionnaires de paquets fonctionnels : 
-* Langage fonctionnel pour décrire la construction des paquets
-* Hash crypto sur (sources, dépendances, expressions pour la construction)
-* Notion de profil/shell via les variables d'environnement
-* Transactionnel (rollback possible)
-* [Isolation à la construction](https://hpc.guix.info/blog/2017/09/reproducibility-and-root-privileges/) 
+- Langage fonctionnel pour décrire la construction des paquets
+- Hash crypto sur (sources, dépendances, expressions pour la construction)
+- Notion de profil/shell via les variables d'environnement
+- Transactionnel (rollback possible)
+- [Isolation à la construction](https://hpc.guix.info/blog/2017/09/reproducibility-and-root-privileges/) 
   
 --- 
 # Quelques définitions
