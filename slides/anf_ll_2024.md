@@ -204,9 +204,9 @@ Objectif : dans le **contexte numérique**, nous aider **faire montre de rigueur
 
 * Exigence de **transparence** (et d'**accessibilité**)
 * Perennité dans le temps **mieux** assurée (*software heritage*)
-* La plupart des logiciels closed source ont des **alternatives** (e.g. matlab vs python, intel-compiler vs. gcc)
-* **Linux** (et UNIX) : point focal de l'open source ; Environnement logiciel **aussi** open source/libre
-* *N'oubliez pas d'aposer une licence logicielle sur votre code source !*
+* La plupart des logiciels à licence privative ont des **alternatives** (e.g. matlab vs python, intel-compiler vs. gcc)
+* **Linux** (et UNIX) : point focal des LL ; Environnement logiciel **aussi** potentiellement libre
+* *N'oubliez pas d'aposer une licence logicielle sur votre code source, dès que possible*
 
 --- 
 # Transparent ≠ Lisible
@@ -257,7 +257,7 @@ main(){return m(0,75,"mIWltouQJGsBniKYvTxODAfbUcFzSpMwNCHEgrdLaPkyVRjXeqZh");}
 * Pratiques et outils standards :
   * Compilation : e.g. make, cmake
   * Distribution de votre code : CRAN, pypi 
-  * **Respectez les normes !** (codage, empaquetage, etc.)
+  * **Respectez les normes/standards !** (codage, empaquetage, etc.)
 * Privilégiez les outils qui ont une communauté active...
 * ...mais pas au détriment du cahier des charges ! 
 
