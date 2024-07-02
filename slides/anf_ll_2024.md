@@ -3,7 +3,7 @@ marp: true
 theme: socrates
 author: Pierre-Antoine Bouttier
 paginate: true
-footer: pierre-antoine.bouttier@univ-grenoble-alpes.fr - CC-BY
+footer: pierre-antoine.bouttier@univ-grenoble-alpes.fr - CC BY-SA 4.0
 ---
 
 <!-- _class: titlepage -->
