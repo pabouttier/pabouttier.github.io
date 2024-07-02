@@ -3,7 +3,7 @@ marp: true
 theme: socrates
 author: Pierre-Antoine Bouttier
 paginate: true
-footer: pierre-antoine.bouttier@univ-grenoble-alpes.fr
+footer: pierre-antoine.bouttier@univ-grenoble-alpes.fr - CC-BY
 ---
 
 <!-- _class: titlepage -->
@@ -97,7 +97,7 @@ The Turing Way Community (2021).
 
 Nous allons parler ici uniquement de reproductibilité
 * Le terme est parlant
-* C'est la fondation des connaissances scientifiques réplciables et/ou robustes et/ou généralisables
+* C'est la fondation des connaissances scientifiques réplicables et/ou robustes et/ou généralisables
 
 
 ---
