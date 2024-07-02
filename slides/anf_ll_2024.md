@@ -200,7 +200,7 @@ Reproductibilité : preuve de **rigueur** qui inspire **confiance**
 Objectif : dans le **contexte numérique**, nous aider **faire montre de rigueur** à travers une pratique ***transparente***, ***lisible*** et ***accessible*** dans la méthodogie employée pour (re)produire de la connaissance
 
 ---
-# Open source (et libre, si possible)
+# ~~Open source~~ Logiciels Libres 
 
 * Exigence de **transparence** (et d'**accessibilité**)
 * Perennité dans le temps **mieux** assurée (*software heritage*)
