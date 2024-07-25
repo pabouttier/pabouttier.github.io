@@ -17,7 +17,7 @@ footer: pierre-antoine.bouttier@univ-grenoble-alpes.fr - CC BY-SA 4.0
 ---
 # D'où je parle
 
-- Ingénieur de recherche CNRS, expert en ingénierie logicelle, spécialisé en mathématiques appliquées, ...
+- Ingénieur de recherche CNRS, expert en ingénierie logicielle, spécialisé en mathématiques appliquées, ...
 - ...directeur adjoint de **l'UAR GRICAD**, basée à Grenoble, fournissant **services, infrastructures et expertise** en soutien à toutes les communautés de recherche grenobloises autour du **calcul scientifique**, du **développement logiciel** et de la **gestion des données de la recherche**.  
 - Je ne suis pas...
   - ...un ASR
@@ -26,7 +26,7 @@ footer: pierre-antoine.bouttier@univ-grenoble-alpes.fr - CC BY-SA 4.0
 ---
 ## Préambule
 
-* À qui je m'adresse ?
+- À qui je m'adresse ?
   - Au plus grand nombre 
   - Grandes hétérogénéités (de public, de pratiques, d'outils, de niveaux de compétences, de culture numérique, *etc.*)
 
