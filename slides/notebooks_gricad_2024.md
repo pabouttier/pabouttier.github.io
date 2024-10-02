@@ -3,10 +3,11 @@ marp: true
 theme: socrates
 author: Pierre-Antoine Bouttier
 paginate: true
+transition: vertical-scroll 0.25s
 footer: pierre-antoine.bouttier@univ-grenoble-alpes.fr - CC BY-SA 4.0
 ---
 
-<!-- _transition: cover -->
+<!-- _transition: cover 0.25s -->
 
 <!-- _class: titlepage -->
 
@@ -17,6 +18,9 @@ footer: pierre-antoine.bouttier@univ-grenoble-alpes.fr - CC BY-SA 4.0
 #### [Pierre-Antoine Bouttier](mailto:pierre-antoine.bouttier@univ-grenoble-alpes.fr), CNRS/GRICAD
 
 ---
+
+<!-- _transition: none -->
+
 # TOC
 
 <!-- _class: cool-list -->
@@ -26,9 +30,6 @@ footer: pierre-antoine.bouttier@univ-grenoble-alpes.fr - CC BY-SA 4.0
 4. *Remarques sur les notebooks et le HPC*
 
 ---
-
-<!-- _transition: vertical-scroll -->
-
 # TOC
 
 <!-- _class: cool-list -->
@@ -38,9 +39,6 @@ footer: pierre-antoine.bouttier@univ-grenoble-alpes.fr - CC BY-SA 4.0
 4. *Remarques sur les notebooks et le HPC*
 
 ---
-
-<!-- _transition: vertical-scroll -->
-
 # Les missions de GRICAD
 
 - **Accompagnement, conseils et formations** aux chercheurs sur leurs besoins liés au calcul scientifique, aux données de la recherche
@@ -48,9 +46,6 @@ footer: pierre-antoine.bouttier@univ-grenoble-alpes.fr - CC BY-SA 4.0
 - ...**Librement accessibles**, à destination de l'ensemble des **communautés de recherche grenobloises et de leurs collaborateurs**
 
 ---
-
-<!-- _transition: vertical-scroll -->
-
 # Notre offre de services numériques
 
 <div align="center">
@@ -60,9 +55,6 @@ footer: pierre-antoine.bouttier@univ-grenoble-alpes.fr - CC BY-SA 4.0
 </div>
 
 ---
-
-<!-- _transition: vertical-scroll -->
-
 # JupyterHub@GRICAD
 
 - Accessible à tous les personnels dans le référentiel UGA
@@ -71,9 +63,6 @@ footer: pierre-antoine.bouttier@univ-grenoble-alpes.fr - CC BY-SA 4.0
 * Intérêt limité SAUF pour l'enseignement (mais hors périmètre GRICAD...)
 
 ---
-
-<!-- _transition: vertical-scroll -->
-
 # Le cloud computing
 
 - Plateforme Openstack permettant de fournir des VM à la demande avec ressources ajustables (RAM, vCPU, éventuellement vGPUs)
@@ -83,9 +72,6 @@ footer: pierre-antoine.bouttier@univ-grenoble-alpes.fr - CC BY-SA 4.0
 * ...au prix de plus d'efforts côté utilisateurs
 
 ---
-
-<!-- _transition: vertical-scroll -->
-
 # Les supercalculateurs
 
 2 principaux clusters :
@@ -101,14 +87,11 @@ footer: pierre-antoine.bouttier@univ-grenoble-alpes.fr - CC BY-SA 4.0
 ---
 <!-- _class: transition -->
 
-<!-- _transition: cover -->
+<!-- _transition: cover 0.25s -->
 
 Pourquoi et comment exécuter des notebooks sur les supercalculateurs ?
 
 ---
-
-<!-- _transition: vertical-scroll -->
-
 # TOC
 
 <!-- _class: cool-list -->
