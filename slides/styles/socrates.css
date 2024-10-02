@@ -101,3 +101,13 @@ section.cite strong {
       padding-bottom : 40px;
       /* text-align: center;  */
    }
+
+   @keyframes marp-outgoing-transition-vertical-scroll {
+    from { transform: translateY(0%); }
+    to { transform: translateY(-100%); }
+  }
+  
+  @keyframes marp-incoming-transition-vertical-scroll {
+    from { transform: translateY(100%); }
+    to { transform: translateY(0%); }
+  }
