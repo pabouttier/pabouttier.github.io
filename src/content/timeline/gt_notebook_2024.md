@@ -6,7 +6,7 @@ linktitle: notebooks_gricad
 type:
 - post
 - posts
-title: **Comment travailler avec des notebooks à GRICAD ?**
+title: Comment travailler avec des notebooks à GRICAD ?
 eventname: Webinar GT Notebooks
 eventlocation: Remote
 weight: 10
