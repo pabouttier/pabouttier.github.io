@@ -11,11 +11,13 @@ footer: pierre-antoine.bouttier@univ-grenoble-alpes.fr - CC BY-SA 4.0
 
 <!-- _class: titlepage -->
 
+![bg left:33%](./fig/jupycad.png)
+
 # Jupyter@GRICAD
-## **Comment travailler avec des notebooks dans un mésocentre de calcul ?**
+## Comment travailler avec des notebooks dans un mésocentre de calcul ?
 
 ### Webinaire GT notebooks, 04/10/2024
-#### [Pierre-Antoine Bouttier](mailto:pierre-antoine.bouttier@univ-grenoble-alpes.fr), CNRS/GRICAD
+#### [Pierre-Antoine Bouttier](mailto:pierre-antoine.bouttier@univ-grenoble-alpes.fr), CNRS/[GRICAD](https://gricad.univ-grenoble-alpes.fr)
 
 ---
 
@@ -184,7 +186,7 @@ http://localhost:8889/?token=524bfbd752f764ef447509bde0a5d8f9169ab603ce33f966
 
 <!-- _transition: cover 0.25s -->
 
-# En pratique -Remarques
+# En pratique - Remarques
 
 * Dans l'interface, accès à l'ensemble des espaces de stockage du cluster
 * Pour les non-initiés, un peu ardu mais se sytématise bien

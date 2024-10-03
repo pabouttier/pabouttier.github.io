@@ -21,12 +21,17 @@
 :root {
     font-family: "Noto Sans";
     font-weight: initial;
-    --cool-list-color: rgb(255, 120, 0);
+    --cool-list-color: #ff7800;
+}
+
+/* Links */
+section a {
+    text-decoration: underline;
 }
 
 /* ------------------- TITLEPAGE -----------------------------*/
 section.titlepage {
-    --title-color: #1d395a;
+    --title-color: #ff7800;
 }
 
 section.titlepage .title {
@@ -35,6 +40,7 @@ section.titlepage .title {
 
 section.titlepage .subtitle {
     font-weight: 300;
+    color: #ff7800;
 }
 
 section.titlepage .author,
