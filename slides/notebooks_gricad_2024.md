@@ -152,7 +152,7 @@ Connect to OAR job 14181444 via the node dahu38
 # En pratique - exécution de jupyter sur les noeuds de calcul
 
 ```sh
-[user@dahu38 ~]$ source /applis/site/nix.sh
+[user@dahu38 ~]$ source /applis/site/guix-start.sh
 [user@dahu38 ~]$ jupyter notebook
 [I 15:48:01.768 NotebookApp] Writing notebook server cookie secret to /home/user/.local/tmp/jupyter/notebook_cookie_secret
 [I 15:48:09.697 NotebookApp] Serving notebooks from local directory: /home/user
@@ -213,9 +213,17 @@ Dus aux mécanismes de réservation de ressources, l'usage interactif d'un clust
 
 # Du notebook à la production
 
-* Devoir exécuter un notebook sur un cluster HPC == besoin de production (plus) massive de données/résultats
-* Une signe d'extraire le code du notebook pour passer sur un ***projet de développement logiciel à part entière***
-* Permettra d'appliquer des bonnes pratiques de développement logiciel (gestion de version, modularité, maintenance, etc.)
+* Devoir exécuter un notebook sur un cluster HPC == besoin de production (plus) massive de données/résultats.
+* Que faire ?
+
+* Côté utilisateur
+    * Une signe d'extraire le code du notebook pour passer sur un ***projet de développement logiciel à part entière***
+    * Permettra d'appliquer des bonnes pratiques de développement logiciel (gestion de version, modularité, maintenance, etc.)
+
+* Côté GRICAD
+
+    * Fournir des solutions simples pour accéder à plus de ressources facilement pour exécuter de snotebooks
+    * Accompagner les utilisateur
 
 ---
 
