@@ -209,21 +209,24 @@ Dus aux mécanismes de réservation de ressources, l'usage interactif d'un clust
 - Tributaire du créneau d'exécution
 
 ---
-<!-- _transition: cover 0.25s -->
-
 # Du notebook à la production
 
 * Devoir exécuter un notebook sur un cluster HPC == besoin de production (plus) massive de données/résultats.
 * Que faire ?
 
+---
+# Du notebook à la production
+
+<!-- _transition: cover 0.25s -->
+
 * Côté utilisateur
-    * Une signe d'extraire le code du notebook pour passer sur un ***projet de développement logiciel à part entière***
+    * Un signe d'extraire le code du notebook pour passer sur un ***projet de développement logiciel à part entière***
     * Permettra d'appliquer des bonnes pratiques de développement logiciel (gestion de version, modularité, maintenance, etc.)
 
 * Côté GRICAD
 
-    * Fournir des solutions simples pour accéder à plus de ressources facilement pour exécuter de snotebooks
-    * Accompagner les utilisateur
+    * Fournir des solutions simples pour accéder à plus de ressources facilement pour exécuter des notebooks
+    * Accompagner les utilisateurs
 
 ---
 
