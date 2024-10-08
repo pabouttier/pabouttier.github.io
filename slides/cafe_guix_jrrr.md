@@ -258,6 +258,7 @@ Cette commande va exécuter le script python dans l'environnement spécifié et 
 Pour reproduire un env.log. il faut donc le décrire le plus complètement possible. Nous avons vu auparavant le fichier `manifest.scm`. Il manque une information : l'état des définitions/du graphe des dépendances.
 
 Nous avons vu précdemment qu'en réalité que celui-ci peut être décrit par la **liste des channels Guix utilisés et leur numéro de commit courant**. Guix propose une commande qui regroupe toutes ces informations :
+
 ```
 guix describe -f channels >> channels.scm
 ```
