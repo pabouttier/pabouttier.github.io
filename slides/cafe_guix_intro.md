@@ -3,7 +3,7 @@ marp: true
 theme: socrates
 author: Ludovic  Courtès & Pierre-Antoine Bouttier
 paginate: true
-footer: Café Guix@JRFRR, 27/03/2024  - pierre-antoine.bouttier@univ-grenoble-alpes.fr
+footer: Café Guix, 15/10/2024  - pierre-antoine.bouttier@univ-grenoble-alpes.fr
 ---
 
 <!-- _class: titlepage -->
