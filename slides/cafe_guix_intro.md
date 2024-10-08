@@ -13,9 +13,9 @@ footer: Café Guix, 15/10/2024  - pierre-antoine.bouttier@univ-grenoble-alpes.fr
 # Gérer les environnements logiciels avec Guix...
 ## **...ou comment rendre reproductible les environnements de calcul**
 
-### Café Guix@JRFRR - 27/03/2024
+### Café Guix - 15/10/2024
 
-#### L. Courtès & P.-A. Bouttier
+#### P.-A. Bouttier
 
 ---
 <!-- _class: cite -->
