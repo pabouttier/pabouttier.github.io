@@ -231,7 +231,8 @@ Cette commande n'installe rien dans votre espace utilisateur, en quittant ce she
 # `guix shell`, une autre façon de déployer un environnement logiciel
 
 `guix shell` propose différents niveaux d'isolation (basé sur les variables d'environnements) :
-```
+
+```sh
 # Peu d'isolation du shell hôte
 $ guix shell -m manifest.scm
 
@@ -304,7 +305,7 @@ Une solution : les conteneurs !
 
 Sur une machine avec Guix, nous pouvons créer un conteneur, basé sur l'environnement logiciel déployé avec Guix, toujours avec `guix time-machine` :
 
-```
+```sh
 guix time-machine -C channels.scm -- pack --format=squashfs -m manifest.scm
 ```
 
