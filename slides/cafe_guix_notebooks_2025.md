@@ -65,7 +65,7 @@ footer: pierre-antoine.bouttier@univ-grenoble-alpes.fr - CC BY-SA 4.0
 
 <div align="center">
 
-![w:500](./fig/infras.png)
+![w:700](./fig/infras.png)
 
 </div>
 
