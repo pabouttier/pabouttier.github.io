@@ -108,7 +108,7 @@ Pourquoi et comment exécuter des notebooks sur les supercalculateurs ?
 - À GRICAD, les commandes Guix sont accessibles en espace utilisateur :
 
 ```sh
-[user@f-dahu ~]$ guix install jupyter python python-numpy
+[user@f-dahu ~]$ guix install jupyter python
 [user@f-dahu ~]$ jupyter notebook --generate-config
 [user@f-dahu ~]$ echo "c.NotebookApp.open_browser = False" >> ~/.jupyter/jupyter_notebook_config.py
 [user@f-dahu ~]$ echo "c.NotebookApp.ip = '0.0.0.0'" >> ~/.jupyter/jupyter_notebook_config.py
