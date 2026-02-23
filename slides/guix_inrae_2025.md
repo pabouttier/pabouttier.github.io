@@ -40,7 +40,7 @@ La Science Ouverte, une tautologie ?
 # L'environnement logiciel, une importante source de variabilité
 
 * Nous n'avons qu'un contrôle limité sur l'environnemment matériel
-* Reproductibilité, réplicabilité, validation, etc. : l'environnement logiciel comme faiseur de roi
+* Reproductibilité, réplicabilité, validation, etc. : l'environnem ent logiciel comme faiseur de roi
 
 ---
 # Un programme, vraiment ?
