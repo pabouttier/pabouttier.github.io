@@ -154,7 +154,7 @@ footer: AG ExaDI, 24/02/2026 - pierre-antoine.bouttier@univ-grenoble-alpes.fr
 
 ---
 
-# Merci à tous pour votre attention ! 
+# Thank you all for your attention!
 
 ---
 
