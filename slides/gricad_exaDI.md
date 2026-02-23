@@ -3,7 +3,7 @@ marp: true
 theme: socrates
 author: Pierre-Antoine Bouttier
 paginate: true
-footer: AG ExaDI, 24/02/2025 - pierre-antoine.bouttier@univ-grenoble-alpes.fr
+footer: AG ExaDI, 24/02/2026 - pierre-antoine.bouttier@univ-grenoble-alpes.fr
 ---
 
 <!-- _class: titlepage -->
@@ -13,7 +13,7 @@ footer: AG ExaDI, 24/02/2025 - pierre-antoine.bouttier@univ-grenoble-alpes.fr
 # Guix@GRICAD
 ## **Software packaging and deployment at GriCAD**
 
-### Exa-DI Annuel Meeting - 24/02/2025
+### Exa-DI Annuel Meeting - 24/02/2026
 
 #### P.-A. Bouttier
 
